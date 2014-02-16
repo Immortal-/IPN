@@ -1,11 +1,4 @@
 <?php
-/**
- * Author: https://github.com/rogierkn
- * Date: 14-2-14
- * Time: 18:37
- *
- */
-
 namespace PayPal;
 
 
