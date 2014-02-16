@@ -1,4 +1,11 @@
 <?php
+/**
+ * Author: https://github.com/rogierkn
+ * Date: 14-2-14
+ * Time: 18:37
+ *
+ */
+
 namespace PayPal;
 
 
@@ -8,9 +15,16 @@ namespace PayPal;
  * @description Class to verify IPN payments through PayPal
  * @author https://github.com/rogierkn
  * @copyright (c) 2014 - Rogier Knoester
- * @license http://opensource.org/licenses/mit-license.html
  *
+ * LICENSE
+ * ----------------------------------------------------------------------------
+ * "THE BEER-WARE LICENSE" (Revision 42):
+ * <phk@FreeBSD.ORG> wrote this file. As long as you retain this notice you
+ * can do whatever you want with this stuff. If we meet some day, and you think
+ * this stuff is worth it, you can buy me a beer in return Poul-Henning Kamp
+ * ----------------------------------------------------------------------------
  */
+
 class IPN {
 
     /*
