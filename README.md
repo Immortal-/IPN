@@ -27,7 +27,7 @@ $ipn->generateForm(array(
     "notify_url" => "http://".$_SERVER["SERVER_NAME"]."/process_ipn.php",
     "return" => "http://".$_SERVER["SERVER_NAME"]."/success_payment.php",
     "cancel_return" => "http://".$_SERVER["SERVER_NAME"]."/cancel_payment.php",
-    ))->printForm();
+))->printForm();
 ```
 
 
