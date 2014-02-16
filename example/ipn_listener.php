@@ -1,11 +1,11 @@
 <?php
 include("IPN.php");
 
-// PHP 5.4+
-$ipn = (new \PayPal\IPN)->verify();
 
-// < PHP 5.4
-// $ipn = new \PayPal\IPN();
-// $ipn->verify();
+$ipn = new \PayPal\IPN();
+if(ipn->verify())
+{
+  // Do on a successful payment
+}
 
 
