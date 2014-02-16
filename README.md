@@ -53,7 +53,10 @@ Now that you've got your IPN form done you want to be able to verify incoming pa
 Verifying is done really easy, just create a new IPN object and call the verify method.
 ```php
 $ipn = new \PayPal\IPN();
-$ipn->verify();
+if($ipn->verify())
+{
+    // Do on a successful payment
+}
 ```
 
 
