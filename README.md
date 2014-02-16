@@ -50,7 +50,7 @@ $ipn->generateForm(array(
 ```
 
 Now that you've got your IPN form done you want to be able to verify incoming payments. The library will verify whether the transaction is legitimate and verified by PayPal, **you will have to do price and other checks yourself!**
-Verifying is done really easy, just create a new IPN object and call the verify method.
+Verifying is done really easy, just create a new IPN object and call the verify method. The method will return TRUE on a verified payment and FALSE on an invalid payment.
 ```php
 $ipn = new \PayPal\IPN();
 if($ipn->verify())
