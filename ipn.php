@@ -225,7 +225,7 @@ class IPN {
             $this->parameters[$key] = $val;
         }
 
-        $this->formString =  '<form name="_xclick" action="https://www.paypal.com/cgi-bin/webscr" method="POST">';
+        $this->formString =  '<form name="_xclick" action="' . $this->getEndpoint() . '" method="POST">'; 
         $this->formString .= '<input type="hidden" name="cmd" value="_xclick">';
 
         foreach($this->parameters as $key => $val)
