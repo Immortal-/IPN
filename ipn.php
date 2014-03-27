@@ -159,6 +159,14 @@ class IPN {
             CURLOPT_RETURNTRANSFER => TRUE,
             CURLOPT_HEADER => TRUE
         );
+
+        if($this->sandbox){
+            $curlOptions += array(
+                CURLOPT_SSL_VERIFYHOST => FALSE,
+                CURLOPT_SSL_VERIFYPEER => FALSE
+            );
+        }
+
         $ch = curl_init();
         curl_setopt_array($ch, $curlOptions);
 
